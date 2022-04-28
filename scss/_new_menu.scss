@@ -183,6 +183,22 @@
     }
 }
 
+.menu-catalog-discount {
+    & .menu-catalog-dropdown {
+        & .row .col {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.menu-catalog-image {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
 .menu-catalog-dropdown-category {
     &:not(:last-child) {
         margin-bottom: 30px;
@@ -208,6 +224,9 @@
             height: 10px;
             background: url("../upload/new-menu-icon/icon-arrow.svg") no-repeat center / contain;
         }
+        &:hover {
+            color: #83C150;
+        }
     }
 }
 
@@ -224,6 +243,9 @@
             font-size: 13px;
             line-height: 154%;
             color: #000000;
+            &:hover {
+                color: #83C150;
+            }
         }
 
         & ul {
@@ -236,6 +258,9 @@
                     font-size: 13px;
                     line-height: 154%;
                     color: #000000;
+                    &:hover {
+                        color: #83C150;
+                    }
                 }
             }
         }

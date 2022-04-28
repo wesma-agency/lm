@@ -85,10 +85,26 @@
         max-width: none;
         padding-left: 0;
         &-focus {
+            float: none;
+            max-width: none;
+            position: absolute;
+            z-index: 4500;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: $w;
             padding-left: 39px;
+            padding-right: 39px;
             .nav-search-input {
+                max-width: 1362px;
                 display: block;
+                margin: 0 auto;
+                input.nav-search-input-text {
+                    padding-right: 45px;
+                }
             }
+
             .nav-search-toggle {
                 display: none;
             }
@@ -99,6 +115,7 @@
     }
     .nav-search-toggle {
         display: block;
+        background-color: #83C150;
     }
     .subscribe-title,
     .subscribe-title h4 {

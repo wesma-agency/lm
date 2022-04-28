@@ -1992,15 +1992,9 @@ button.button.orange.loading:after {
   max-width: 350px;
   padding: 20px 0 20px 0px;
 }
-.nav-search-focus .nav-search-input {
-  max-width: 1362px;
-  margin: 0 auto;
-}
-.nav-search-focus .nav-search-input input.nav-search-input-text {
-  padding-right: 45px;
-}
 .nav-search-open input.nav-search-button {
   background-color: #83C150;
+  background-image: url("../upload/new-menu-icon/search-new-white.svg");
 }
 .nav-search-open .nav-search-delete {
   display: block;
@@ -2101,7 +2095,7 @@ input.nav-search-button {
   display: none;
   width: 40px;
   height: 39px;
-  background: transparent url("../upload/search.svg") 7px 9px no-repeat;
+  background: transparent url("../upload/new-menu-icon/search-new-white.svg") 7px 9px no-repeat;
   background-size: 20px 20px;
 }
 
@@ -27212,10 +27206,25 @@ a.new-product-brand-feature:hover .new-product-brand-feature-title {
     padding-left: 0;
   }
   .nav-search-focus {
+    float: none;
+    max-width: none;
+    position: absolute;
+    z-index: 4500;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #ffffff;
     padding-left: 39px;
+    padding-right: 39px;
   }
   .nav-search-focus .nav-search-input {
+    max-width: 1362px;
     display: block;
+    margin: 0 auto;
+  }
+  .nav-search-focus .nav-search-input input.nav-search-input-text {
+    padding-right: 45px;
   }
   .nav-search-focus .nav-search-toggle {
     display: none;
@@ -27227,6 +27236,7 @@ a.new-product-brand-feature:hover .new-product-brand-feature-title {
 
   .nav-search-toggle {
     display: block;
+    background-color: #83C150;
   }
 
   .subscribe-title,
@@ -28260,6 +28270,14 @@ a.new-product-brand-feature:hover .new-product-brand-feature-title {
   margin-right: 40px;
 }
 
+.menu-catalog-discount .menu-catalog-dropdown .row .col:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu-catalog-image:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .menu-catalog-dropdown-category:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -28288,6 +28306,9 @@ a.new-product-brand-feature:hover .new-product-brand-feature-title {
   height: 10px;
   background: url("../upload/new-menu-icon/icon-arrow.svg") no-repeat center/contain;
 }
+.menu-catalog-dropdown-category-name a:hover {
+  color: #83C150;
+}
 
 .menu-catalog-dropdown-category-list {
   margin-top: 20px;
@@ -28303,6 +28324,9 @@ a.new-product-brand-feature:hover .new-product-brand-feature-title {
   line-height: 154%;
   color: #000000;
 }
+.menu-catalog-dropdown-category-list > li > a:hover {
+  color: #83C150;
+}
 .menu-catalog-dropdown-category-list > li ul li:not(:last-child) {
   margin-bottom: 5px;
 }
@@ -28311,6 +28335,9 @@ a.new-product-brand-feature:hover .new-product-brand-feature-title {
   font-size: 13px;
   line-height: 154%;
   color: #000000;
+}
+.menu-catalog-dropdown-category-list > li ul li a:hover {
+  color: #83C150;
 }
 
 @media (max-width: 1325px) {
